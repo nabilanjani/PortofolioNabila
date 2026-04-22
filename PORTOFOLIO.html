@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabila Betari Anjani | Portfolio</title>
+
+<style>
+:root {
+  --primary: #3b82f6;
+  --secondary: #6366f1;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #e0e7ff, #f0f9ff);
+  color: var(--text);
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px; /* sama biar konsisten */
+  background: white;
+  color: #3b82f6;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #3b82f6;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* PROFILE */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-left img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  object-fit: cover;
+}
+
+.profile-right {
+  flex: 1;
+}
+
+.summary {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* SOCIAL ICON */
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px; /* ini rounded rectangle */
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  transition: 0.3s;
+}
+
+.social-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+}
+
+.org-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .org-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* SECTION */
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 17px;
+}
+
+.meta {
+  font-size: 13px;
+  color: gray;
+  margin: 5px 0;
+}
+
+.desc {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* IMAGE GRID */
+.image-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* PROJECT */
+.project {
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- PROFILE CARD -->
+  <div class="card profile-card">
+    <div class="profile-left">
+      <img src="linkedin.jpg">
+    </div>
+
+    <div class="profile-right">
+      <h1>Nabila Betari Anjani</h1>
+      <!-- <p class="subtitle">Informatics | Web Dev | Data Enthusiast</p> -->
+
+      <p class="summary">
+        Nabila Betari Anjani is an Informatics Graduate with a GPA of 3,60 from Universitas Diponegoro. 
+        Experienced in web development and data science, including classification and Natural Language Processing (NLP). 
+        Demonstrated leadership and organizational abilities through managing teams, leading projects, and coordinating cross-functional activities while creating a well-planned and origanized work environment. 
+        Also skilled in graphic design and video editing, with strong creativity and attention to detail. 
+        Posesses good problem solving, communication, and adaptability, and is eager to contribute to professional environment.
+      </p>
+
+      <div class="socials">
+        <a href="https://instagram.com/nabilabetarii" target="_blank" class="social-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        </a>
+        <a href="https://linkedin.com/in/nabilabetaria" target="_blank" class="social-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png">
+        </a>
+        <a href="Curriculum Vitae (CV) Nabila Betari Anjani.pdf" download class="cv-btn">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <h2>Education</h2>
+
+    <div class="card">
+      <h3>UNIVERSITAS DIPONEGORO - Bachelor of Informatics</h3>
+      <div class="meta">Aug 2022 - Apr 2026 | GPA: 3.60/4.00</div>
+      <div class="desc">Relevant Courses: Data Structures, Human and Computer Interaction, Software Engineering, 
+        Algorithm Analysis and Strategy, Platforrm-Based Development, Software Projects, Information Systems, 
+        Project Management, Big Data, and Data Mining, Cyber Security</div>
+    </div>
+
+    <div class="card">
+      <h3>STATE SENIOR HIGH SCHOOL  11 - Mathematics and Science</h3>
+      <div class="meta">Aug 2019 - May 2022</div>
+      <div class="desc">Final Score: 87.03/100.00</div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+      <h3>Internship Position - NATIONAL UNITY AND POLITICAL AGENCY OF CENTRAL JAVA PROVINCE</h3>
+      <div class="meta">Jan 2025 - Jan 2025</div>
+      <div class="desc">
+        Developing a web-based inventory management information system as individual project with Laravel Framework. 
+        This project honed my ability to manage the full software development life cycle, spanning requirements analysis, 
+        stakeholder negotiation, and independent technical execution.
+      </div>
+    </div>
+  </div>
+
+  <!-- ORGANIZATION -->
+  <div class="section">
+    <h2>Organizational & Volunteer</h2>
+    <div class="org-grid">
+      <div class="card">
+        <h3>INFORMATICS STUDENTS ASSOCIATION</h3>
+        <div class="meta">Feb 2024 - Feb 2025 | Head of Communication and Information Staff</div>
+        <div class="desc">
+          Supervised 14th staffs members across three sub-divisions: Creative Media, Website, and Public Relations.
+          Built and maintained partnerships with internal and external stakeholder, including students associations from Diponegoro University, Bandung Institute of Technology, and Brawijaya University, and contributed to media partnerships.
+        </div>
+
+        <div class="image-grid">
+          <img src="koming1.jpeg">
+          <img src="koming2.jpeg">
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>INFORMATICS FOR THE ORPHANAGE</h3>
+        <div class="meta">Mar 2023 | Speaker</div>
+        <div class="desc">
+          Delivered an interactive session on basic informatics concepts and student life in Informatics to 30 orphanage participants at Al Idris Orphanage.
+          Engaged participants through fun learning to enhance understanding and interest in technology.
+        </div>
+
+        <div class="image-grid">
+          <img src="info1.jpeg">
+          <img src="info2.jpeg">
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>INFORMATICS CARE</h3>
+        <div class="meta">May 2023 | Speaker and Master of Ceremony</div>
+        <div class="desc">
+          Hosted and facilitated a community service ‘live-in’ program in Soponyono, Semarang
+          Delivered sessions about dreams and conducted interactive games with local children.
+          Ensured smooth execution of event activities and participant engagement.
+        </div>
+
+        <div class="image-grid">
+          <img src="icare1.jpeg">
+          <img src="icare2.jpeg">
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>COMMUNITY SERVICE PROGRAM FOR STRENGTHENING LOCAL LEADING COMMODITIES</h3>
+        <div class="meta">Aug 2024 | Speaker</div>
+        <div class="desc">
+          Delivered training and live demonstrations on optmizing product photography using smartphones for local food MSMEs in Magelang.
+          Supported participants in improving digital marketing content for business development.
+        </div>
+
+        <div class="image-grid">
+          <img src="pengmas1.jpeg">
+          <img src="pengmas2.jpeg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="card project">
+      <h3>‘SIRIS’: STUDENT STUDY PLAN INFORMATION SYSTEM</h3>
+      <div class="meta">Fullstack Developer on Student Actor | Group</div>
+      <div class="desc">
+        Built frontend and backend features, including authentication (login/logout), 
+        student status submission (active/leave), course registration, course selection and cancellation, 
+        IRS status tracking, and academic transcript viiewing.
+      </div>
+
+      <div class="image-grid">
+        <img src="siris1.png">
+        <img src="siris2.png">
+        <img src="siris3.png">
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>‘SIKESBANG’: INVENTORY MANAGEMENT INFORMATION SYSTEM</h3>
+      <div class="meta">Fullstack Developer | Internship Individual Project</div>
+      <div class="desc">
+        Developed a web-based inventory management systems as a Full Stack Developer for three user roles: staff, admin, and general personnel.
+        Defined systems requirements and created system design documentation.
+        Performed black-box testing to ensure system functionally and reliability.
+      </div>
+
+      <div class="image-grid">
+        <img src="sikesbang1.png">
+        <img src="sikesbang2.png">
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>‘SELISIK’: SOCIAL ENGINEERING MESSAGE DETECTION MODEL</h3>
+      <div class="meta">Full Cycle Developer | Thesis Individual Project</div>
+      <div class="desc">
+        Developed a machine learning model to detect social engineering messages through an end-to-end pipeline.
+        Conducted data collection, data understanding, preprocessing, data splitting, modeling, and evaluation.
+        Bulit a web-based demo application to showcase the model implementation.
+      </div>
+
+      <div class="image-grid">
+        <img src="sel1.png">
+        <!-- <img src="sel2.png"> -->
+        <img src="sel3.png">
+      </div>
+    </div>
+
+    <div class="card project">
+      <h3>'HaloBeluk': UMKM PROFILE WEBSITE</h3>
+      <div class="meta">Fullstack Developer | Individual Kuliah Kerja Nyata Project</div>
+      <div class="desc">
+        Developed a web-based platform to support the digital presence of local MSMEs in Beluk Village, Pemalang.
+        Created online product catalog for UMKM across Beluk, including pages for lokal Kelompok Wanita Tani (KWT) and article section.
+        Contributed to improving digital marketing and information accessibility for local communities.
+      </div>
+
+      <div class="image-grid">
+        <img src="beluk1.png">
+        <img src="beluk2.png">
+        <img src="beluk3.png">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
